@@ -24,7 +24,7 @@ function currentSlide(n, b) {
 function showSlides(n, b) {
   let i;
   let slides = document.getElementsByClassName(b);
-  let dots = document.getElementsByClassName("dot");
+  let dots = document.getElementsByClassName((b == "mySlides") ? "dot" : "dot2");
   if(b == "mySlides"){
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
@@ -53,4 +53,4 @@ function showSlides(n, b) {
 setInterval(()=>{
     plusSlides(1, "mySlides")
     plusSlides(1, "mySlides2")
-}, 2000)
+}, 2500)
