@@ -1,7 +1,7 @@
 .device {
   margin: auto;
     border-radius: 20px;
-    max-width: 400px;
+    max-width: 200px;
     position: relative;
     box-sizing: border-box;
     background: #fff;
@@ -13,7 +13,7 @@
   
   .device img {
     width: 100%;
-    max-width: 400px;
+    max-width: 220px;
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, .24);
   }
@@ -232,98 +232,14 @@
   }
   
   
-  /* Page layout */
-  body {
-    margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container,
-  .device-collection {
-    max-width: 100%;
-    margin: 40px;
-  }
-  
+
   /* General layout and typography stuff */
   @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
   
-  * {
-    box-sizing: border-box;
-    position: relative;
-    transition: all .3s ease
-  }
-  
-  html {
-    font-size: 16px
-  }
-  
-  body {
-    font-family: Open Sans, Verdana, sans-serif;
-    color: rgba(62, 48, 226, 0.87);
-    font-weight: 400;
-    line-height: 1.45
-  }
-  
-  body,
-  header {
-    background: #fafafa
-  }
-  
-  header {
-    padding: 40px;
-    min-height: 200px;
-    text-align: center;
-    color: rgba(0, 0, 0, .87)
-  }
-  
-  header > * {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto
-  }
-  
-  header>:last-child {
-    margin-bottom: 0
-  }
-  
-  h1 {
-    margin-bottom: 0.5em;
-    font-weight: inherit;
-    line-height: 1.2;
-    color: #1575ae;
-    font-size: 2.618em
-  }
-  
-  @media (min-width:800px) {
-    h1 {
-      font-size: 4.236em;
-      font-weight: 300
-    }
-  }
-  
-  p {
-    margin-bottom: 1.3em;
-    line-height: 1.618
-  }
-  
-  @media (min-width:800px) {
-    p {
-      font-size: 15px
-    }
-  }
-  
-  a {
-    color: #e03616;
-    text-decoration: none
-  }
-  * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  width: auto;
+  width: 200px;
   position: relative;
   margin: auto;
 }
@@ -391,14 +307,14 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover, .dot2:hover {
+.activeDot, .dot:hover, .dot2:hover {
   background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 4.5s;
 }
 
 @keyframes fade {
