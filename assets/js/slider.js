@@ -4,7 +4,7 @@ let slideIndex3 = 1;
 let slideIndex4 = 1;
 showSlides(slideIndex, "mySlides");
 showSlides(slideIndex, "mySlides2");
-// showSlides(slideIndex, "mySlides3");
+showSlides(slideIndex, "mySlides3");
 // showSlides(slideIndex, "mySlides4");
 
 // Next/previous controls
@@ -36,8 +36,8 @@ function currentSlide(n, b) {
 function showSlides(n, b) {
   let i;
   let slides = document.getElementsByClassName(b);
-  let dots = document.getElementsByClassName((b == "mySlides") ? "dot" : "dot2");
   if(b == "mySlides"){
+    let dots = document.getElementsByClassName("dot");
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
@@ -49,6 +49,7 @@ function showSlides(n, b) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " activeDot";
    }else if(b == "mySlides2"){
+    let dots = document.getElementsByClassName("dot2");
     if (n > slides.length) {slideIndex2 = 1}
     if (n < 1) {slideIndex2 = slides.length}
     for (i = 0; i < slides.length; i++) {
@@ -61,6 +62,7 @@ function showSlides(n, b) {
     dots[slideIndex2-1].className += " activeDot";
    }
    else if(b == "mySlides3"){
+    let dots = document.getElementsByClassName("dot3");
     if (n > slides.length) {slideIndex3 = 1}
     if (n < 1) {slideIndex3 = slides.length}
     for (i = 0; i < slides.length; i++) {
@@ -73,6 +75,7 @@ function showSlides(n, b) {
     dots[slideIndex3-1].className += " activeDot";
    }
    else if(b == "mySlides4"){
+    let dots = document.getElementsByClassName("dot4");
     if (n > slides.length) {slideIndex4 = 1}
     if (n < 1) {slideIndex4 = slides.length}
     for (i = 0; i < slides.length; i++) {
@@ -89,6 +92,6 @@ function showSlides(n, b) {
 setInterval(()=>{
     plusSlides(1, "mySlides")
     plusSlides(1, "mySlides2")
-    // plusSlides(1, "mySlides3")
+    plusSlides(1, "mySlides3")
     // plusSlides(1, "mySlides4")
 }, 5000)
