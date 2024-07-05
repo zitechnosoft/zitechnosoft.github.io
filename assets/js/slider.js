@@ -94,4 +94,4 @@ setInterval(()=>{
     plusSlides(1, "mySlides2")
     plusSlides(1, "mySlides3")
     // plusSlides(1, "mySlides4")
-}, 5000)
+}, 5000)    
